@@ -1,0 +1,14 @@
+matrix:
+  include:
+    - language: c
+      
+      before_install:
+        - sudo apt-get install -y valgrind
+        - export LEET_CODE_EXEC_VERSION=`grep "define LEETCODE_EXEC_VERSION" main/version.h | awk -F "\"" '{print $2}'`
+      script:
+        - make cov
+        - make test
+        - make gencov
+      after_success:
+        - echo "VERSION $LEET_CODE_EXEC_VERSION"
+        - bash <(curl -s https://codecov.io/bash)
