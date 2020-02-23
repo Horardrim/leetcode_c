@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-#define LEETCODE_EXEC_VERSION "1.0.0"
+#define LEETCODE_EXEC_VERSION "1.1.0"
 
 void show_version()
 {
