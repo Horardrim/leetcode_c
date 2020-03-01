@@ -2,5 +2,5 @@
 
 void run_leetcode_problems()
 {
-    printf("to implement this later.\n");
+    two_sum_resolv();
 }
