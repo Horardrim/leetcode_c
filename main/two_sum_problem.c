@@ -3,7 +3,7 @@
 static char * problem_title = "Two Sum";
 
 static char * description = "Given an array of integers, return indices of the two numbers such that they add up to a specific target.\n\
-You may assume that each input would have exactly one solution, and you may not use the same element twice.";
+  You may assume that each input would have exactly one solution, and you may not use the same element twice.";
 
 static int * prepare_input(int * target, unsigned int size)
 {
@@ -186,8 +186,9 @@ static void debug_resolve()
 
 void two_sum_resolv()
 {
-    printf("Leet Code Title: %s\n\n", problem_title);
-    printf("%s\n", description);
+    printf("\033[1;31mLeet Code Title: \033[1;36m%s\n\n", problem_title);
+    printf("\033[1;32m%s\n", description);
+    printf("\033[m\n");
 
     debug_resolve();
     (void ) resolv_normal_scena;

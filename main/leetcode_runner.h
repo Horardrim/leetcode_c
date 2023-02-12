@@ -2,6 +2,7 @@
 #define LEETCODE_RUNNER_H
 
 #include "two_sum_problem.h"
+#include "longest_cycle.h"
 
 void run_leetcode_problems();
 
